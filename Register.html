@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            width: 100%;
+            min-height: 100vh;
+            background: skyblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 90%;
+            background: rgb(30, 172, 228);
+            max-width: 800px;
+            
+        }
+
+        .right {
+            padding: 50px;
+            background: #fff;
+            flex-basis: 50%;
+            flex-grow: 1;
+        }
+
+        .left {
+            padding: 50px;
+            flex-basis: 50%;
+            flex-grow: 1;
+            padding-top: 0;
+
+        }
+
+
+        .container .form {
+            margin-top: 10px;
+            padding: 14px;
+        }
+
+        .container .form label{
+            font-size: 12px;
+        }
+
+        .form .input_field input {
+            position: relative;
+            height: 30px;
+            width: 100%;
+            outline: none;
+            font-size: 16px;
+            color: #707070;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 0 15px;
+            margin-bottom: 10px;
+        }
+
+        .form .column {
+            display: flex;
+            column-gap: 15px;
+        }
+
+        .right h1 {
+            text-align: center;
+            font-size: 32px;
+        }
+        span{
+            text-decoration: underline;
+            color: rgb(9, 141, 235);
+        }
+        .btn{
+            padding: 5px 15px;
+            color: white;
+            background-color:  rgb(9, 141, 235);
+            border-radius: 4px;
+            margin-top: 20px;
+            outline: none;
+        }
+
+        .left h1 {
+            text-align: left;
+            font-size: 32px;
+            padding-bottom: 20px;
+        }
+
+        p{
+            font-size: 12px;
+            padding-bottom: 20px;
+        }
+        .btn1{
+            padding: 5px 15px;
+            color: rgb(9, 141, 235);
+            background-color:  white;
+            border-radius: 4px;
+            margin-top: 20px;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>Information</h1>
+
+            <p>Lorem ipsum dolor, sitn,serunt odio exercitationem dolorem voluptas quibusdam? Quos deleniti iusto tenetur pariatur amet facere!</p>
+
+            <p><b> Note:</b> Lorem ipsum dolor, sitn,serunt odio exercitationem dolorem voluptas quibusdam? Quos deleniti iusto tenetur pariatur amet facere!</p>
+
+            <button class="btn1">Have an account.</button>
+        </div>
+        <div class="right">
+
+            <h1>Register Form</h1>
+            <form class="form">
+
+                <div class="column">
+                    <div class="input_field">
+                        <label>Full Name</label>
+                        <input type="text" class="input" required>
+                    </div>
+
+                    <div class="input_field">
+                        <label>Last Name</label>
+                        <input type="text" class="input" required>
+                    </div>
+
+                </div>
+
+                <div class="input_field">
+                    <label>Your Email</label>
+                    <input type="text" class="input" required>
+                </div>
+
+                <div class="column">
+                    <div class="input_field">
+                        <label>Password</label>
+                        <input type="password" class="input" required>
+                    </div>
+
+                    <div class="input_field">
+                        <label>Coirm Password</label>
+                        <input type="password" class="input" required>
+                    </div>
+
+                </div>
+                
+
+                
+                <p><input type="checkbox">I agree to the <span> Terms and Conditions</span></p>
+
+                <button class="btn">Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

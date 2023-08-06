@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        body {
+
+            background-color: rgb(8, 248, 236);
+            padding: 0 10px;
+        }
+
+        .wrapper {
+            border-radius: 25px;
+            max-width: 500px;
+            width: 100%;
+            background: white;
+            margin: 20px auto;
+            padding: 30px;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+        }
+
+        .wrapper .title {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            color: orangered;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .wrapper .form {
+            width: 100%;
+        }
+
+        .wrapper .form .txt {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .wrapper .form .txt label {
+            width: 200px;
+            color: #757757;
+            margin-right: 10px;
+            font-size: 10px;
+        }
+
+        .wrapper .form .txt .input,
+        .wrapper .form .txt .textarea {
+            width: 100%;
+            outline: none;
+            border: 1px solid black;
+            font-size: 11px;
+            padding: 8px 10px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+
+        }
+
+        .wrapper .form .txt .textarea {
+            resize: none;
+            height: 125px;
+        }
+
+        .btn{
+            width: 100px;
+            padding: 8px 10px;
+            font-size: 10px;
+            border: 0;
+            background: blanchedalmond;
+            color: brown;
+            cursor: pointer;
+            border-radius: 3px;
+            outline: none;
+            margin-left: 30px;
+            
+        }
+
+        .btn_btn{
+            margin-left: 140px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="title">
+            <h1> Registration Form</h1>
+        </div>
+
+        <div class="form">
+            <div class="txt">
+                <label>First Name</label>
+                <input type="text" class="input">
+            </div>
+
+            <div class="txt">
+                <label>Last Name</label>
+                <input type="text" class="input">
+            </div>
+
+            <div class="txt">
+                <label>Middle Name</label>
+                <input type="text" class="input">
+            </div>
+
+            <div class="txt">
+                <label>E-mail</label>
+                <input type="text" class="input">
+            </div>
+
+            <div class="txt">
+                <label>Password</label>
+                <input type="password" class="input">
+            </div>
+
+            <div class="txt">
+                <label>Date Of Birth</label>
+                <input type="text" class="input">
+            </div>
+
+            <div class="txt">
+                <label>Gender</label>
+
+                <div class="radio">
+                    <input type="radio" name="language" value="Male">
+                    <label>Male</label>
+                    <input type="radio" name="language" value="Female">
+                    <label>Female</label>
+                    <input type="radio" name="language" value="Others">
+                    <label>Others</label>
+                </div>
+            </div>
+
+            <div class="txt">
+                <label>Mobile</label>
+                <input type="text" class="input">
+            </div>
+
+            <div class="txt">
+                <label>Address</label>
+                <textarea class="textarea" cols="30" rows="10"></textarea>
+            </div>
+
+           <div class="btn_btn">
+            <input type="submit" class="btn">
+            <input type="reset" class="btn">
+           </div>
+        </div>
+    </div>
+</body>
+
+</html>
